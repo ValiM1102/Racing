@@ -1,11 +1,31 @@
 body {
-    background-color: black;
-    color: whitesmoke;
-    font-family: sans-serif;
-    
-}
-span {
-    color: whitesmoke;
-    font-size: 30px;
+    background-color: rgb(151, 240, 228);
+    color: rgb(2, 42, 58);
+    font-family: Arial,sans-serif;
+    font-size: 21px;
 
+}
+h1 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    font-style: italic;
+    font-weight: bolder;
+
+}
+a {
+    color: rgb(2, 42, 58);
+    text-decoration: none;
+
+}
+a:hover{
+    color: rgb(24, 83, 243);
+    background-color: whitesmoke;
+}
+a:active{
+    color: violet;
 }
