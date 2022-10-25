@@ -3,6 +3,7 @@ body{
     font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin: 0;
+   
 
 }
 
@@ -18,58 +19,59 @@ header{
 
 }
 .container {
-    background-color: #dfccf1;
-    width: 100%;
-    margin: 0%;
+   columns: 3 250px;
+   column-gap: 2em;
+   display: grid;
+   
+}
+@media (min-width: 50em) {
+    .container{grid-auto-flow: column;}
+   
+    .driftracing:nth-child(3n+1) {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: black;
+        background-image: url(../img/drift3.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        height: 250px;
+        grid-column: 1;
+        
+     }
+    .rallyracing:nth-child(3n+2) {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: black;
+        background-image: url(../img/rally2.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        grid-column: 2;
+        
+    }
+    .dragracing:nth-child(3n+3) {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: black;
+        background-image: url(../img/drag.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        grid-column: 3;}
 
 }
-.driftracing {
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    color: black;
-    background-image: url(../img/drift3.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    float: left;
-    width: 30%;
-    margin: 10px;
-    margin-left: 3%;
+
     
-}
-.rallyracing {
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    color: black;
-    background-image: url(../img/rally2.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    float:left;
-    width: 30%;
-    margin: 10px;
-    margin-left: 3%;
+    
     
 
-}
-.dragracing {
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    color: black;
-    background-image: url(../img/drag.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    float: left;
-    width: 30%;
-    margin: 10px;
-    margin-left:3%;
-    
 
-}
 footer{
     background-color: #f7e1d3;
     margin: 0;
@@ -78,3 +80,5 @@ footer{
     text-align: center;
 
 }
+
+p {margin-top: 0;}
