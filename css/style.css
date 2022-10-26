@@ -14,7 +14,7 @@ header{
     text-align: center;
     color: black;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    
     
 
 }
@@ -90,4 +90,10 @@ a:hover {
 }
 a:active{
     color: black;
+}
+.content {
+    background-color: #9fc0f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
