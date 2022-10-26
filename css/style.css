@@ -14,12 +14,13 @@ header{
     text-align: center;
     color: black;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     
 
 }
 .container {
-   columns: 3 250px;
+   background-color: #b9d5e2;
+    columns: 3 250px;
    column-gap: 2em;
    display: grid;
    
@@ -38,6 +39,7 @@ header{
         background-size: cover; 
         height: 250px;
         grid-column: 1;
+        margin-left: 10px;
         
      }
     .rallyracing:nth-child(3n+2) {
@@ -63,14 +65,11 @@ header{
         background-position: center;
         background-size: cover;
         height: 250px;
-        grid-column: 3;}
-
+        grid-column: 3;
+    margin-right: 10px;
+    }
+        
 }
-
-    
-    
-    
-
 
 footer{
     background-color: #f7e1d3;
@@ -82,3 +81,13 @@ footer{
 }
 
 p {margin-top: 0;}
+a {
+    color: rgb(2, 7, 22);
+    text-decoration: none;
+}
+a:hover {
+    color: teal;
+}
+a:active{
+    color: black;
+}
